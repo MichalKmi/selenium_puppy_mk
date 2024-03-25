@@ -1,0 +1,15 @@
+{
+  "default": {
+    "formatOptions": {
+      "snipperInterface": "async-await"
+    },
+    "dryRun": false,
+    "require": [
+      "features/step_definitions/*.ts",
+      "features/hooks/*.ts"
+    ],
+    "requireModule": [
+      "ts-node/register"
+    ]
+  }
+}

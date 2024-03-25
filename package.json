@@ -1,0 +1,36 @@
+{
+  "name": "selenium_puppy_mk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all-tests": "npm run prepare-tests && cucumber-js",
+    "test-1": "npm run prepare-tests && cucumber-js --tags @test-1",
+    "test-2": "npm run prepare-tests && cucumber-js --tags @test-2",
+    "test-3": "npm run prepare-tests && cucumber-js --tags @test-3",
+    "test-4": "npm run prepare-tests && cucumber-js --tags @test-4",
+    "test-5": "npm run prepare-tests && cucumber-js --tags @test-5",
+    "test-6": "npm run prepare-tests && cucumber-js --tags @test-6",
+    "test-7": "npm run prepare-tests && cucumber-js --tags @test-7",
+    "prepare-tests": "find features/step_definitions -name '*.ts' -exec tsc {} +"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/selenium-webdriver": "^4.1.22",
+    "chromedriver": "^123.0.0",
+    "cucumber": "^6.0.7",
+    "mocha": "^10.3.0",
+    "selenium-webdriver": "^4.18.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@types/chai": "^4.3.14",
+    "@types/cucumber": "^7.0.0",
+    "@types/mocha": "^10.0.6",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.3"
+  }
+}
